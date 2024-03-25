@@ -1,0 +1,42 @@
+package Java;
+
+import java.util.Scanner;
+
+public class Ejercicio5 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Se ingresa un valor numérico de 8 dígitos que representa una fecha con el siguiente formato aaaammdd.
+		 Se pide informar por separado el día, el mes y el año de la fecha ingresada.
+        */
+		
+		Scanner d = new Scanner(System.in);
+		
+		System.out.println("Ingrese un numero de 8 difitos que repesenta una fecha aaaammdd :  ");
+		int fecha = d.nextInt();
+		
+		int anio = fecha / 10000;
+		
+		int mes = fecha / 100 % 100 ;
+		
+		int dia = fecha %100;
+		
+		
+		System.out.println("El año es: " + anio);
+		System.out.println("El mes es: " + mes);
+		System.out.println("El mes es: " + dia);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+
+}
