@@ -20,6 +20,21 @@ public class App {
 		System.out.println(circulito.obtenerArea());
 		
 		
+		//PUNTO
+		Punto p1 = new Punto(3,6);
+		
+		System.out.println(p1);
+		
+		p1.cambiarX(8);
+		p1.cambiarY(0);
+		System.out.println(p1);
+		System.out.println(p1.estaSobreEjeX()); 
+		System.out.println(p1.estaSobreEjeY());
+		System.out.println(p1.esElOrigen());
+	
+		
+		
+		
 		
 		
 		
