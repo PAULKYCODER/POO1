@@ -3,16 +3,21 @@ package Nota;
 public class Nota {
 
 	//tipo de dato privado
-	private int valor;
+	private int valorNota;
 	
 	//constructor
-	Nota(int valor){
-		this.valor = valor;
+	public Nota(int valorInicial){
+		this.valorNota = valorInicial;
 	}
 	
 	//METODOS
+	public int obtenerValorNota() {
+		return this.valorNota;
+
+	}
+	
 	public boolean estaAprobado() {
-		return (valor>=4 && valor <= 10);
+		return (valorNota>=4 && valorNota <= 10);
 			
 	}
 
@@ -20,19 +25,16 @@ public class Nota {
 		return !estaAprobado();
 	}
 
-	public int obtenerValorNota() {
-
-		return valor;
-	}
+	
 
 	public boolean promociona() {
 
-		return valor >= 7;
+		return valorNota >= 7;
 	}
 
 	public void recupera(int nuevoValor) {
-		if(nuevoValor > valor) {
-			valor=nuevoValor;
+		if(nuevoValor > valorNota) {
+			valorNota=nuevoValor;
 		}
 
 	}

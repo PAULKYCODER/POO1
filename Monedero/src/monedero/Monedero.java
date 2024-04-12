@@ -1,4 +1,6 @@
-package monedero;
+package Monedero;
+
+
 
 public class Monedero {
 	
@@ -32,8 +34,8 @@ public class Monedero {
 		return dinero;
 	}
 	
-	
-	
+}
+	/*
 	public static void main(String[] args) {
 		
 		Monedero miMonederoRosa = new Monedero(1000);
@@ -61,3 +63,4 @@ public class Monedero {
 	}
 
 }
+*/
