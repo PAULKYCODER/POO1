@@ -12,33 +12,27 @@ Circulo c1 = new Circulo(new Punto(0, 0), 1);
 Circulo c2 = new Circulo(new Punto(1, 1), 1.5);
 System.out.println(c1.intersectaCon(c2)); // true*/
 
-public class Circulo {
-	
-	private double radio;
-	
-	
+class Circulo {
+    private Punto centro;
+    private double radio;
 
-	//constructor
-	public Circulo(double x, double y, double radio) {
-		
-		this.setRadio(radio);
-		
-		
-	}
-	
-	//Metodos
-	public void setRadio(double radio) {
-		if(radio <= 0 ) {
-			throw new Error("Radio inválido");
-		}
-		this.radio = radio;
-	}
-	
+    public Circulo(Punto centro, double radio) {
+        this.centro = centro;
+        this.radio = radio;
+    }
+
+    public Punto getCentro() {
+        return centro;
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public boolean intersectaCon(Circulo otroCirculo) {
+        double distanciaCentros = Math.sqrt(Math.pow(this.centro.getX() - otroCirculo.getCentro().getX(), 2)
+                                            + Math.pow(this.centro.getY() - otroCirculo.getCentro().getY(), 2));
+        return distanciaCentros <= this.radio + otroCirculo.getRadio();
+    }
 }
-	
-
-	
-	
-	
-	
 

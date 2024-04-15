@@ -9,7 +9,7 @@ public double obtenerY()
 public void cambiarX(double nuevoX)
 public void cambiarY(double nuevoY)
 
-saber si el punto está sobre el eje de las X:
+saber si el punto está sobre el eje de las X: 
 public boolean estaSobreEjeX()
 
 saber si el punto está sobre el eje de las Y:
